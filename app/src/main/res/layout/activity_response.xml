@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".Activities.ResponseActivity"
+    android:background="#F1C05F">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Waste Collection Record"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:layout_centerHorizontal="true">
+
+    </TextView>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:padding="5dp"
+        android:layout_marginTop="50dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:layout_editor_absoluteX="-164dp"
+        tools:layout_editor_absoluteY="0dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+    <TextView
+        android:id="@+id/record2"
+        android:layout_width="wrap_content"
+        android:text="Attendance Record"
+        android:layout_below="@+id/recycler_view"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:layout_centerHorizontal="true">
+
+    </TextView>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view2"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:padding="5dp"
+        android:layout_below="@id/record2"
+        android:layout_marginTop="20dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:layout_editor_absoluteX="-164dp"
+        tools:layout_editor_absoluteY="0dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+
+            <RelativeLayout
+        android:id="@+id/progressLayout10"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff">
+
+
+        <ProgressBar
+            android:id="@+id/progressBar10"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
